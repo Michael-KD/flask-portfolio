@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="form">
+    <form action="/new/" method="POST">
+        <input class="titleinput" type="text" name="title" id="title" required placeholder="Title" maxlength="50" autocomplete="off" spellcheck="True">
+        <input class="noteinput" type="text" name="content" id="content" required placeholder="Note" maxlength="200" autocomplete="off" spellcheck="True">
+        <input type="submit" value="Create Note">
+    </form>
+</div>
+{% endblock %}

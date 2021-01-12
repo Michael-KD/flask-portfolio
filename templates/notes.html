@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+    {% for note in orderednotes %}
+    <h3>{{ note.title }} - {{ note.date_created.date() }}</h3>
+    <p class="noteOutput">{{ note.content }}</p>
+    {% endfor %}
+{% endblock %}
