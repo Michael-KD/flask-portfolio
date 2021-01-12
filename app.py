@@ -4,7 +4,8 @@ from datetime import *
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://kzzfkyzlwyelun:d1f62682f93b67e7d4f4fb010f3316aa672798c990cf3d551a71f2d3b11c4d3a@ec2-50-19-32-202.compute-1.amazonaws.com:5432/d5a20rrp8nkudt'
+#sqlite:///test.db
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
