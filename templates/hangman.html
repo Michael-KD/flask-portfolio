@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<p>Hangman</p>
+<p>{{ word }}</p>
+<ul>
+    <li>{{ wordDef }}</li>
+</ul>
+<form action="/hangman" method="POST">
+    <input type="submit" value="New Word">
+</form>
+{% endblock %}

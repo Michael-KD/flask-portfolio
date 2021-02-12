@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<p>Youtube Downloader</p>
+
+<form action="/youtube" method="POST">
+    <input name="link" id="link"  required placeholder="Youtube Link" autocomplete="off">
+    <input type="submit" value="Download">
+</form>
+{% endblock %}
