@@ -40,6 +40,10 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/animations/', methods=['GET', 'POST'])
+def animations():
+    return render_template('animations.html')
+
 @app.route('/new/', methods=['GET', 'POST'])
 def new():
     if request.method == 'POST':

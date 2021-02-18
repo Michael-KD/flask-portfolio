@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    
+
     {% if title %}
         <title>Flask App - {{ title }}</title>
     {% else %}
@@ -20,6 +20,8 @@
         <li class="navitem"><a href="/home">Home</a></li>
         <li class="navitem"><a href="/about">About</a></li>
         <li class="navitem"><a href="/youtube">Youtube Downloader</a></li>
+        <li class="navitem"><a href="/animations">CSS Animations</a></li>
+
         <li style="float:right" class="dropdown navitem">
           <a href="/notes" class="dropbtn">Notes</a>
           <div class="dropdown-content">
