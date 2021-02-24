@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\dkrum\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+    "python.pythonPath": "/home/axolotlman2/Code/flask-portfolio/env/bin/python3",
     "python.terminal.activateEnvInCurrentTerminal": true
 }

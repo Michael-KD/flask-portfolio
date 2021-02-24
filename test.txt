@@ -1,0 +1,31 @@
+let wordJS = $('#my-data').data("word");
+let wordDefJS = $('#my-data').data("def");
+
+//    console.log(wordJS);
+//    console.log(wordDefJS);
+
+
+function wordScrambleGame(word, def) {
+    wordArray = word.split('');
+    wordArrayShuffled = shuffle(wordArray);
+    wordShuffled = wordArrayShuffled.join('');
+    $(".wordspace").text(wordShuffled);
+    $(".defspace").text(def);
+    console.log(wordShuffled);
+}
+
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+
+$(".test").click(function() {
+    wordScrambleGame(wordJS, wordDefJS);
+
+});

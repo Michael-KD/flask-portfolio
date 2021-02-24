@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+<meta id="my-data" data-word="{{ word }}" data-def="{{ wordDef }}">
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<p>Word Scramble</p>
+<h2 class="wordspace">{{ word }}</h2>
+<ul>
+    <li class="defspace">{{ wordDef }}</li>
+</ul>
+
+<input class="guessInput">
+<button class="test">Test</button>
+<h class="result"></h>
+<button class="hint">Click here for a hint!</button>
+<h2 class="hintLetters"></h2>
+<p></p>
+<form action="/wordscramble" method="POST">
+    <input type="submit" value="New Word">
+</form>
+{% endblock %}

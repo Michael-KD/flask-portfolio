@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta id="my-data" data-word="{{ word }}" data-def="{{ wordDef }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     {% if title %}
@@ -16,6 +17,7 @@
     <ul>
         <li class="navitem"><a href="/home">Home</a></li>
         <li class="navitem"><a href="/about">About</a></li>
+        <li class="navitem"><a href="/youtube">Youtube Downloader</a></li>
         <li style="float:right" class="dropdown navitem">
           <a href="/notes" class="dropbtn">Notes</a>
           <div class="dropdown-content">
@@ -24,7 +26,14 @@
             <a class="navitem" href="/delete">Delete</a>
           </div>
         <li class="navitem" style="float:right"><a class="name">Michael's Portfolio</a></li>
-        </li>
+        <li style="float:right" class="dropdown navitem">
+            <a href="/wordgames" class="dropbtn">Word Games</a>
+            <div class="dropdown-content">
+              <a class="navitem" href="/wordscramble">Word Scramble</a>
+              <a class="navitem" href="/hangman">Hangman</a>
+            </div>
+        
+        
     </ul>
     </nav>
     <br>
