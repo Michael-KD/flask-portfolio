@@ -16,7 +16,7 @@ wordList = ['abate', 'aberration', 'abhor', 'abhorrence', 'abstruse', 'accost', 
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://yjyhamspdpwcpj:7b246f420c5cb044ba359f212bae04a95f6eb11df5a036779365a62a0737dd03@ec2-18-207-95-219.compute-1.amazonaws.com:5432/df4rir03qfq9ra'
 #postgres://yjyhamspdpwcpj:7b246f420c5cb044ba359f212bae04a95f6eb11df5a036779365a62a0737dd03@ec2-18-207-95-219.compute-1.amazonaws.com:5432/df4rir03qfq9ra
 #sqlite:///test.db
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
