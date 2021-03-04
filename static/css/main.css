@@ -1,3 +1,8 @@
+@keyframes border-shrink {
+    from {border-radius: 0px;}
+    to {border-radius: 15px;}
+}
+
 .nav ul {
     list-style-type: none;
     margin: 0;
@@ -84,13 +89,30 @@ li.dropdown {
     border-bottom: #333333 solid 1px;
 }
 
-button {
+button, input[type=submit] {
     background-color: white; 
     color: black; 
-    border: 2px solid #f44336;
+    border: 2px solid red;
 }
   
-button:hover {
-    background-color: #f44336;
+button:hover, input[type=submit]:hover  {
+    background-color: red;
     color: white;
+}
+
+input[type=text] {
+    padding: 5px;
+    margin: 5;
+    border: 2px solid red;
+    border-radius: 0px;
+    outline: none !important;
+} 
+
+input[type=text]:focus {
+    animation: border-shrink 0.7s forwards;
+    padding: 5px;
+    margin: 5;
+    border: 2px solid red;
+    /* border-radius: 15px; */
+    outline: none !important;
 }
