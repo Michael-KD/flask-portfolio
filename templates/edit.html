@@ -8,7 +8,7 @@
 <h1>Edit</h1>
 <ul>
     {% for note in orderednotes %}
-            <li><a class="note_edit link" href="{{note.id}}/">{{ note.title }} - {{ note.date_created.date() }}</a></li>
+            <li><a class="note_edit link" href="/edit/{{note.id}}/">{{ note.title }} - {{ note.date_created.date() }}</a></li>
     {% endfor %}
 </ul> 
 {% endblock %}
